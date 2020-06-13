@@ -1,0 +1,12 @@
+{
+  "commit": {
+    "commit": "a4125916fdbabfaea15ed45e0d1b4c8ecb9f9c7a",
+    "author": "Dominic Bennett <dominic.john.bennett@gmail.com>",
+    "time": "2020-06-13 10:48:19",
+    "files": 1,
+    "merge": false,
+    "message": "stringsAsFactors=FALSE, ops.factor error fix in cluster^2 merging\n"
+  },
+  "remote": "https://github.com/ropensci/phylotaR",
+  "pkg": "phylotaR"
+}
