@@ -1,0 +1,12 @@
+{
+  "commit": {
+    "commit": "5e0bc06871ff7c85e75359e28a46ab750e6129b0",
+    "author": "Shixiang Wang (王诗翔) <wangshx@shanghaitech.edu.cn>",
+    "time": "2023-07-01 14:11:01",
+    "files": 2,
+    "merge": false,
+    "message": "rm release to CRAN\n"
+  },
+  "repo": "https://github.com/ropensci/phylotaR",
+  "pkg": "phylotaR"
+}
