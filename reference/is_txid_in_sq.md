@@ -1,0 +1,65 @@
+# Is txid in sequence?
+
+Checks if given txid is represented by sequence by looking at sequence
+source organism's lineage.
+
+## Usage
+
+``` r
+is_txid_in_sq(phylota, txid, sid)
+```
+
+## Arguments
+
+- phylota:
+
+  Phylota
+
+- txid:
+
+  Taxonomic ID
+
+- sid:
+
+  Sequence ID
+
+## Value
+
+boolean
+
+## See also
+
+Other tools-public:
+[`calc_mad()`](https://docs.ropensci.org/phylotaR/reference/calc_mad.md),
+[`calc_wrdfrq()`](https://docs.ropensci.org/phylotaR/reference/calc_wrdfrq.md),
+[`drop_by_rank()`](https://docs.ropensci.org/phylotaR/reference/drop_by_rank.md),
+[`drop_clstrs()`](https://docs.ropensci.org/phylotaR/reference/drop_clstrs.md),
+[`drop_sqs()`](https://docs.ropensci.org/phylotaR/reference/drop_sqs.md),
+[`get_clstr_slot()`](https://docs.ropensci.org/phylotaR/reference/get_clstr_slot.md),
+[`get_nsqs()`](https://docs.ropensci.org/phylotaR/reference/get_nsqs.md),
+[`get_ntaxa()`](https://docs.ropensci.org/phylotaR/reference/get_ntaxa.md),
+[`get_sq_slot()`](https://docs.ropensci.org/phylotaR/reference/get_sq_slot.md),
+[`get_stage_times()`](https://docs.ropensci.org/phylotaR/reference/get_stage_times.md),
+[`get_tx_slot()`](https://docs.ropensci.org/phylotaR/reference/get_tx_slot.md),
+[`get_txids()`](https://docs.ropensci.org/phylotaR/reference/get_txids.md),
+[`is_txid_in_clstr()`](https://docs.ropensci.org/phylotaR/reference/is_txid_in_clstr.md),
+[`list_clstrrec_slots()`](https://docs.ropensci.org/phylotaR/reference/list_clstrrec_slots.md),
+[`list_ncbi_ranks()`](https://docs.ropensci.org/phylotaR/reference/list_ncbi_ranks.md),
+[`list_seqrec_slots()`](https://docs.ropensci.org/phylotaR/reference/list_seqrec_slots.md),
+[`list_taxrec_slots()`](https://docs.ropensci.org/phylotaR/reference/list_taxrec_slots.md),
+[`plot_phylota_pa()`](https://docs.ropensci.org/phylotaR/reference/plot_phylota_pa.md),
+[`plot_phylota_treemap()`](https://docs.ropensci.org/phylotaR/reference/plot_phylota_treemap.md),
+[`read_phylota()`](https://docs.ropensci.org/phylotaR/reference/read_phylota.md),
+[`write_sqs()`](https://docs.ropensci.org/phylotaR/reference/write_sqs.md)
+
+## Examples
+
+``` r
+data(tinamous)
+sid <- tinamous@sids[[1]]
+sq <- tinamous[[sid]]
+txid <- sq@txid
+# expect true
+is_txid_in_sq(phylota = tinamous, txid = txid, sid = sid)
+#> [1] TRUE
+```
